@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATG TASK2</title>
+
+  <!----------------------CSS CAROUSEL--------------->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----------------------CSS CAROUSEL--------------->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----------------------CSS BOOTSTRAP--------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+  <!----------------------CSS STYLE MAIN--------------->
+  <link rel="stylesheet" href="./css/styles.css" />
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <!-----------------------------desktop view----------------------->
+  <div class="desktopCont container-fluid">
+
+    <!--------------------SVG PATHS------------------>
+    <div class="svgCont">
+      <svg version="1.1" id="transring" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px" y="0px" viewBox="0 0 414 414" style="enable-background: new 0 0 414 414" xml:space="preserve">
+        <path id="Transparent_Ring" class="transrg" style="
+              opacity: 0.4;
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              enable-background: new;
+            " d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+        c-47.8,0-91-19.4-122.3-50.7"></path>
+
+        <path id="Opaque_Ring" class="transrgwht" stroke-dasharray="0,1000" style="
+              fill: none;
+              stroke: rgb(255, 255, 255);
+              stroke-width: 2;
+              stroke-miterlimit: 10;
+              stroke-dasharray: 10, 1000;
+            " d="M84.2,85c31.3-31.5,74.7-51,122.7-51c95.5,0,173,77.5,173,173s-77.5,173-173,173
+        c-47.8,0-91-19.4-122.3-50.7"></path>
+
+        <g id="Dots1" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill1" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M84,80 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
+          </g>
+          <g>
+            <path class="dotsstro1" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M84,80c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 87, 80, 84,80 z"></path>
+          </g>
+        </g>
+        <g id="Dots2" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill2" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
+          </g>
+          <g>
+            <path class="dotsstro2" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M206.8,29c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6S 210.1,29, 206.8,29 z M206.8"></path>
+          </g>
+        </g>
+        <g id="Dots3" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill3" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
+          </g>
+          <g>
+            <path class="dotsstro3" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M332,85 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 335,85, 332,85 z M332"></path>
+          </g>
+        </g>
+        <g id="Dots4" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill4" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
+          </g>
+          <g>
+            <path class="dotsstro4" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M380,205 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 383,205, 380,205 z M380"></path>
+          </g>
+        </g>
+        <g id="Dots5" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill5" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
+          </g>
+          <g>
+            <path class="dotsstro5" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M335,315 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 340,315, 335,315 z M335"></path>
+          </g>
+        </g>
+        <g id="Dots6" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill6" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
+          </g>
+          <g>
+            <path class="dotsstro6" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M210,375 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 215,375, 210,375 z M210"></path>
+          </g>
+        </g>
+        <g id="Dots7" class="dots-nav">
+          <g>
+            <path class="dotsst dotsfill7" style="fill: rgb(0, 146, 255); opacity: 1"
+              d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
+          </g>
+          <g>
+            <path class="dotsstro7" style="
+                  opacity: 1;
+                  fill: none;
+                  stroke: rgb(255, 255, 255);
+                  stroke-width: 2;
+                  stroke-miterlimit: 10;
+                " d="M88,324 c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6 -6 S 92,324, 88,324 z M88"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <!---------End of svg paths----------->
+
+
+    <!---------------text Frist section ------------->
+    <div class="primaryText">
+      <div class="text">
+        <div class="h3 Texttop ">Text Headline</div>
+        <div class="h1 textheading  text-center"> Text Headline</div>
+        <div class="h3 bottom my-4">Footer Headline</div>
+        <div class="h1 ABC">ABC 345</div>
+        <div class="h5 footer-title">
+          We are the best web development company in the world
+        </div>
+        <div class="h6 Soon">Coming Soon </div>
+        <div class="h6 skip">S K I P</div>
+      </div>
+    </div>
+
+    <!------------------- images Frist Section---------------- -->
+    <div class="PrimaryImage">
+      <div class="img2021 Img1">
+        <img class="fitnesstrackingmobile1" src="./img/nasa-fitness-tracking-mobile-app.png" alt="error404"/>
+        <img class="fitnesstrackingmobile2" src="./img/measure-total-body-weight-through-fitness-app.png" alt="error404"/>
+      </div>
+
+      <div class="img2021 Img2">
+        <img class="pizza1image" src="./img/dominos-bread.png" alt="error404" />
+        <img class="pizza2image" src="./img/dominos-bread1.png" alt="error404"/>
+        <img class="pizza3image" src="./img/dominos-masala.png" alt="error404"/>
+        <img class="pizza4image" src="./img/pizza_box.png" alt="error404"/>
+        <img class="pizza5image" src="./img/ux-strategy-for-mobile-app-devlopment.png" alt="error404" />
+        <img class="pizza6image" src="./img/on-demand-app-development-company.png" alt="error404" />
+        <img class="pizza7image" src="./img/domi-img1.png" alt="error404"/>
+      </div>
+
+      <div class="img2021">
+        <img class="karvanimg1" src="./img/karavan_2.png" alt="error404" />
+        <img class="karvanimg2" src="./img/karavan-social-networking-app-screen-2.png" alt="error404" />
+        <img class="karvanimg3" src="./img/karavan-social-networking-app-screen.png" alt="error404" />
+        <img class="karvanimg4" src="./img/developers-for-social-media-app.png" alt="error404" />
+        <img class="karvanimg5" src="./img/social-networking-app-case-study.png" alt="error404" />
+      </div>
+
+      <div class="img2021">
+        <img class="erp-app" src="./img/erp-app-development-service.png" alt="error404" />
+      </div>
+
+      <div class="img2021">
+        <img class="veme11" src="./img/veme-blockchain-app-developed.png" alt="error404" />
+        <img class="veme12" src="./img/veme-app-ui-design.png" alt="error404" />
+      </div>
+
+      <div class="img2021">
+        <img class="nextgtv11" src="./img/nexgtv-entertainment-mobile-app-development.png" alt="error404" />
+        <img class="nextgtv12" src="./img/nexgtv-mobile-app-ui-design.png" alt="error404" />
+      </div>
+
+      <div class="img2021">
+        <img class="melto11" src="./img/melltoo-img2.png" alt="error404" />
+        <img class="melto12" src="./img/melltoo-img1.png" alt="error404" />
+      </div>
+    </div>
+
+    <!------------------trigger for animation------------------->
+    <div class="trigger1"></div>
+    <div class="trigger2"></div>
+    <div class="trigger3"></div>
+    <div class="trigger4"></div>
+    <div class="trigger5"></div>
+    <div class="trigger6"></div>
+    <div class="trigger7"></div>
+  </div>
+
+  <!------------------------------mobile---------------------->
+
+  <div class="owl-carousel owl-theme mobilemode d-block d-md-none ">
+    <!--------------------Slider1----------------->
+    <div class="Sliders">
+      <div class="img-cont slideroneimg">
+        <img class="fitnessImg1" src="./img/nasa-fitness-tracking-mobile-app.png" alt="" />
+        <img class="fitnessImg2" src="./img/measure-total-body-weight-through-fitness-app.png" alt="" />
+      </div>
+      <div class="text-cont slideronetext">
+        <div class="all-text">
+          <h1>ABC 1 </h1>
+          <h5>
+            this is sample text for ABC 1
+          </h5>
+          <h6>Case Study -</h6>
+        </div>
+
+        <div class="button slideronebutton">Coming Soon</div>
+      </div>
+    </div>
+
+    <!-- Slider2 -->
+    <div class="Sliders">
+      <div class="img-cont slidertwoimg">
+        <img class="pizzaphoto1" src="./img/dominos-bread.png" alt="" />
+        <img class="pizzaphoto2" src="./img/dominos-bread1.png" alt="" />
+        <img class="pizzaphoto3" src="./img/dominos-masala.png" alt="" />
+        <img class="pizzaphoto4" src="./img/pizza_box.png" alt="" />
+        <img class="pizzaphoto5" src="./img/ux-strategy-for-mobile-app-devlopment.png" alt="" />
+        <img class="pizzaphoto6" src="./img/on-demand-app-development-company.png" alt="" />
+        <img class="pizzaphoto7" src="./img/domi-img1.png" alt="" />
+      </div>
+      <div class="text-cont slidertwotext">
+        <div class="all-text">
+          <h1>ABC 2</h1>
+          <h5>
+            this is sample text for ABC 2
+          </h5>
+          <h6> View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg> </h6>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-----------------Slider3---------------------->
+    <div class="Sliders">
+      <div class="img-cont sliderthreeimg">
+        <img class="karvanphoto1" src="./img/karavan_2.png" alt="" />
+        <img class="karvanphoto2" src="./img/karavan-social-networking-app-screen-2.png" alt="" />
+        <img class="karvanphoto3" src="./img/karavan-social-networking-app-screen.png" alt="" />
+        <img class="karvanphoto4" src="./img/developers-for-social-media-app.png" alt="" />
+        <img class="karvanphoto5" src="./img/social-networking-app-case-study.png" alt="" />
+      </div>
+      <div class="text-cont sliderthreetext">
+        <div class="all-text">
+          <h1>ABC 3</h1>
+          <h5>
+            this is sample text for ABC 3
+          </h5>
+          <h6> View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg> </h6>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!--------------Slider4------------------->
+    <div class="Sliders">
+      <div class="img-cont sliderfourimg">
+        <div class="sliderfourimageone"></div>
+        <img class="sliderfourimagetwo" src="./img/erp-app-development-service.png" alt="" />
+      </div>
+      <div class="text-cont sliderfourtext">
+        <div class="all-text">
+          <h1>ABC 4</h1>
+          <h5>
+            this is sample text for ABC 4
+          </h5>
+          <h6> View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg> </h6>
+        </div>
+
+      </div>
+    </div>
+
+    <!--------------Slider5------------->
+    <div class="Sliders">
+      <div class="img-cont sliderfiveimg">
+        <img class="vemephoto1" src="./img/veme-blockchain-app-developed.png" alt="" />
+        <img class="vemephoto2" src="./img/veme-app-ui-design.png" alt="" />
+      </div>
+      <div class="text-cont sliderfivetext">
+        <div class="all-text">
+          <h1>ABC 5</h1>
+          <h5>
+            this is sample text for ABC 5
+          </h5>
+          <h6>Case Study -</h6>
+        </div>
+
+        <div class="button sliderfivebutton">Coming Soon</div>
+      </div>
+    </div>
+
+    <!------------Slider6--------------->
+    <div class="Sliders">
+      <img class="photo3slider6" src="./img/world-communication-awards-for-best-digital-experience.png" alt="" />
+      <div class="img-cont slider6img">
+        <img class="photo1slider6" src="./img/nexgtv-entertainment-mobile-app-development.png" alt="" />
+        <img class="photo2slider6" src="./img/nexgtv-mobile-app-ui-design.png" alt="" />
+      </div>
+      <div class="text-cont slider6text">
+        <div class="all-text">
+          <h1>ABC 6</h1>
+          <h5>
+            this is sample text for ABC 6
+          </h5>
+          <h6> View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+            </svg> </h6>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!------------Slider7------------------->
+    <div class="Sliders">
+      <img class="mobile-app-of-the-year" src="./img/mobile-app-of-the-year-by-entrepreneur.png" alt="" />
+      <div class="img-cont slidersevenimg">
+        <img class="photo1slider7" src="./img/melltoo-img2.png" alt="" />
+        <img class="photo2slider7" src="./img/melltoo-img1.png" alt="" />
+      </div>
+      <div class="text-cont sliderseventext">
+        <div class="all-text">
+          <h1>ABC 7</h1>
+          <h5>
+            this is sample text for ABC 7
+          </h5>
+          <h6>Case Study :</h6>
+        </div>
+
+        <div class="button slidersevenbutton">Coming Soon</div>
+      </div>
+    </div>
+  </div>
+
+  <!---------js jquery---------->
+  <script src="./js/jquery.min.js"></script>
+
+  <!---------js owl carousel---------->
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <!---------js tween max---------->
+  <script src="./js/TweenMax.min.js"></script>
+
+  <!---------js scroll magic---------->
+  <script src="./js/ScrollMagic.min.js"></script>
+
+  <!---------js gsap---------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+  <!---------js scrolltrigger---------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+  <!---------js scroll magic---------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+  <!---------js progressbar---------->
+  <script src="./js/progressbar.min.js"></script>
+
+
+  <!---------js carousel---------->
+  <script src="./js/carousel.js" defer></script>
+
+  <!---------js animation---------->
+  <script src="./js/AnimationAll.js" defer></script>
+
+  <!---------js textanimation---------->
+  <script src="./js/textanimation.js" defer></script>
+
+  <!---------js imageanimation---------->
+  <script src="./js/imganimation.js" defer></script>
+
+  <!-------main--------->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
