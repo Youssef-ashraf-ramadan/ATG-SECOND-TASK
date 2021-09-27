@@ -11,3 +11,5 @@ Technology used in project >
 2-css
 3 - js 
 4- jquery > owl.carousel && onresize function for reload the site in mobile mode and desktop mode 
+
+Live preview https://youssef-ashraf-ramadan.github.io/ATG-SECOND-TASK/
